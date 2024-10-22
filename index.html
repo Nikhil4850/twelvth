@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10th class</title>
+
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+#logo{
+    color: #000;
+    line-height: 200%;
+}
+
+#sd{
+    text-align: center;
+}
+header {
+    background: #ccc;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #010000;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    color: #1e00ff; /* Change text color on hover */
+} 
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10 px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background: #646161;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+footer {
+    h2 {
+        color: #ecedf8;
+    }
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecedf8;
+    /* background-image: url('https://th.bing.com/th/id/OIP.pqLd4QuF4HnV7_8ZiZ-ZaQHaEo?pid=ImgDet&w=474&h=296&rs=1'); */
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbox {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+}
+
+#chatbox p {
+    margin: 5px 0;
+}
+
+#userInput {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sendBtn {
+    width: 50px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+/* } */
+
+#sendBtn:hover {
+    background-color: #0056b3;
+}
+/* hello */
+.banner button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* for banner */
+.image_sliderHome {
+    margin-top:7vh;
+    position:relative;
+    z-index:99;
+}
+.sliderBanner {
+    width:100%;
+    height:65vh;
+    overflow:hidden;
+    position:relative;
+
+}
+
+.chat-icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-icon {
+    background-color: #FF3B3B;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#chatbox {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#userInput {
+    width: calc(100% - 60px);
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sendBtn {
+    padding: 5px 10px;
+    background-color: #FF3B3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background-color: #cc3232;
+}
+#register {
+    border: 2px solid #333; /* Border color and thickness */
+    padding: 20px; /* Space inside the box */
+    margin: 20px auto; /* Centering the box and adding space around it */
+    width: 500px; /* Width of the box */
+    background-color: #ffffff; /* Background color of the box */
+    background-image: url('https://www.theaccountant-online.com/wp-content/uploads/sites/10/2021/07/Code.jpg');
+    box-shadow: 0px 0px 10px rgba(61, 216, 9, 0.1); /* Adding a subtle shadow for depth */
+    border-radius: 10px; /* Rounding the corners */
+}
+
+#register h2 {
+    text-align: center; /* Centering the heading inside the box */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+#registrationForm label,
+#registrationForm input,
+#registrationForm select {
+    display: block; /* Ensures that each label and input/select occupies a new line */
+    width: 100%; /* Makes the inputs and selects fill the box width */
+    margin-bottom: 10px; /* Adds space below each form element */
+}
+
+#registrationForm input[type="submit"] {
+    width: auto; /* Allows the submit button to have a smaller width */
+    margin: 10px auto 0; /* Centers the submit button */
+    display: block; /* Ensures the submit button is centered */
+    padding: 10px; /* Adds padding inside the submit button */
+    background-color: #333; /* Background color of the submit button */
+    color: #fff; /* Text color of the submit button */
+    border: none; /* Removes the border of the submit button */
+    border-radius: 5px; /* Rounds the corners of the submit button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
+#registrationForm input[type="submit"]:hover {
+    background-color: #555; /* Changes the button color on hover */
+}
+/* #contact{
+    background-color: #555;
+    color: #ffffff;
+}
+} */
+</style>
+
+
+
+
+
+
+
+<body>
+    <header>
+        <!-- <img src="c:\Users\Nikhil\Downloads\.shorts\logo.jpg.jpeg" alt="CAREER HELPER" class="logo"> -->
+        <nav>
+            <ul>
+                <li><a id="logo" href="https://nikhil4850.github.io/Carrier-helper/">CAREERHELPER.com</a></li>
+                <li><a href="https://nikhil4850.github.io/carrierhelper/"> Home</a></li>
+                <li><a href="https://nikhil4850.github.io/cources/">Cources</a></li>
+                <li><a href="https://nikhil4850.github.io/IQ-test/">IQ Test</a></li>
+                <li><a href="https://nikhil4850.github.io/consultant/">consultant</a></li>
+                <li><a href="https://nikhil4850.github.io/ccontact/">Contact</a></li>
+                <li><a href="http://localhost/login/">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+ <section>
+        <div class="container">
+            <div class="card-and-text">
+                <div class="test-card">
+                    <div class="test-content">
+                        <img src="https://th.bing.com/th/id/R.98c5f6b91ae5a99411d75e7c9020b01f?rik=ZFf0Rt9rE70B6Q&riu=http%3a%2f%2fclipartmag.com%2fimages%2fpath-clipart-25.png&ehk=UedFxuwx%2blskPGmLh%2bpD8Mb0cEgqp%2boBiSwzgcMi8aw%3d&risl=&pid=ImgRaw&r=0" alt="Photo">
+                        <div class="test-details">
+                            <h1>
+                                Career Counselling For Class 11 & 12 Students</h1>
+                            <p style=" font-size: 20px;color: #fff;margin-right: 400px;margin-left: 100px;">
+                                CCareerGuide brings this Program for all class 11 & 12 students to overcome wide variety confusions , issues and provide ultimate guidance to take them to their ultimate goal.
+
+                                Career Counselling helps students in getting best career guidance after 12th
+                            </p>
+                            <ul class="test-info">
+                            
+                            </ul>
+                        </div>
+                    </div>       
+                </div>
+        </div>
+</section>
+
+    <style>
+        .card-and-text {
+            display: flex;
+            justify-content: space-between;
+            gap: 0px;
+        }
+    
+        .test-card {
+            background-color: #9ac6e1;
+            width:100%;
+            height: 380px;
+            padding: 20px;
+            
+        }
+
+        .test-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .test-content img {
+            width: 35%;
+            height: 35%;
+            margin-right: 0px;
+        }
+    
+        .test-details {
+            text-align: left;
+            flex-grow: 1;
+        }
+    
+        .test-details h1 {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 10px;
+            margin-right: 400px;
+            margin-top: 0%;
+            margin-left: 100px;
+        }
+
+    </style>
+
+
+    <section class="about">
+        <h2>1. Understanding the Core Streams</h2>
+        <p style="margin-left: 4%;">After completing 10th grade, students in most education systems (like India) are expected to choose one of the following streams:</p>
+
+        <h4>a.Science</h4>
+        <li>Core Subjects: Physics, Chemistry, Mathematics/Biology, English</li>
+        <li>Popular Career Paths</li>
+        <li style="margin-left: 14%;">Engineering</li>
+        <li style="margin-left: 14%;">Medical Sciences (Doctor, Dentist, Veterinary, etc.)</li>
+        <li style="margin-left: 14%;">IT and Computer Science</li>
+        <li style="margin-left: 14%;">Research and Development</li>
+        <li style="margin-left: 14%;">Architecture</li>
+        <li>For Whom: Students with strong problem-solving skills, curiosity in science and technology, and good analytical abilities.</li>
+        
+        <h4>b.Commerce</h4>
+        <li>Core Subjects: Accountancy, Business Studies, Economics, Mathematics (optional), English.</li>
+        <li>Popular Career Paths:</li>
+        <li style="margin-left: 14%;">Chartered Accountant (CA)</li>
+        <li style="margin-left: 14%;">Business Management (MBA, BBA)</li>
+        <li style="margin-left: 14%;">Economics, Finance, Banking</li>
+        <li style="margin-left: 14%;">Company Secretary (CS)</li>
+        <li style="margin-left: 14%;">Stock Market and Investment Banking</li>
+        <li>For Whom: Ideal for students interested in business, finance, and economic concepts.</li>
+
+        <h4>c.Arts/Humanities</h4>
+        <li>Core Subjects: History, Political Science, Sociology, Psychology, Geography, English.</li>
+        <li>Popular Career Paths:</li>
+        <li style="margin-left: 14%;">Civil Services (IAS, IPS)</li>
+        <li style="margin-left: 14%;">Journalism and Mass Communication</li>
+        <li style="margin-left: 14%;">Law (LLB, Legal Studies)</li>
+        <li style="margin-left: 14%;">Social Work, Counseling</li>
+        <li style="margin-left: 14%;">Education (Teaching, Professorship)</li>
+        <li>For Whom: Suitable for students passionate about social sciences, literature, and creative fields.</li>
+
+        <h2>2. Vocational Courses and Diploma Options</h2>
+        <p style="margin-left: 4%;">Not every student wants to pursue traditional streams. There are vocational and diploma courses that can directly lead to job opportunities:</p>
+        <li style="margin-left: 8%;">Diploma in Engineering (Polytechnic)</li>
+        <li style="margin-left: 8%;">ITI (Industrial Training Institutes)</li>
+        <li style="margin-left: 8%;">Hotel Management</li>
+        <li style="margin-left: 8%;">Fashion Designing</li>
+        <li style="margin-left: 8%;">Interior Designing</li>
+        <li style="margin-left: 8%;">Travel & Tourism</li>
+        <li style="margin-left: 8%;">Animation and Multimedia</li>
+        <li style="margin-left: 8%;">Event Management</li>
+
+        <h2>3.Key Considerations for Students</h2>
+        <li style="margin-left: 8%;">Interest & Passion: Encourage students to reflect on what subjects and activities they enjoy.</li>
+        <li style="margin-left: 8%;">Aptitude: Help them assess their strengths through aptitude tests. Some may excel in numbers, while others are creative or hands-on learners.</li>
+        <li style="margin-left: 8%;">Future Opportunities: Discuss the long-term career prospects in each field. Some industries may have faster growth than others.</li>
+        <li style="margin-left: 8%;">Personal Goals: What kind of work-life balance, job stability, and income expectations does the student have?</li>
+
+    </section>
+
+    <style>
+        .about {
+            width: 60%;
+            margin-top: 30px; /* Adds space between the header and main content */
+            padding: 30px;
+            padding: 20px;
+            text-align: left;
+            margin-left: 20%;
+        }
+
+        .about h4 {
+            margin-left: 8%;
+        }
+
+        .about li {
+            margin-left: 11%;
+        }
+
+    </style>
+
+    <style>
+        h2 {
+            margin-top: 50px;
+        }
+        body {
+            position: relative;
+        }
+   
+        nav {
+            position: fixed;
+            width: 100%;
+            height: 7vh;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            z-index: 100;
+            background-color: rgb(255, 245, 245);
+            box-shadow: 0px 0px 20px 0px #e81a1a;
+        }
+   
+        .nav-ul {
+            display: flex;
+            list-style: none;
+            width: 75%;
+            align-items: center;
+            background-color: rgb(96, 47, 160);
+            margin: 1vh 0;
+            text-overflow: clip;
+            white-space: nowrap;
+            justify-content: space-around; 
+            font-size: 9px;
+        }
+     </style>   
+     <footer>
+        <p id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: carrierhelper@gmail.com</p>
+            <p>Phone: 9766323998</p>
+        </p>
+        </footer>
+        <div class="whatsapp-icon-container">
+            <div class="whatsapp-icon"><a href="https://chat.whatsapp.com/HPAbPV1dKmrCb7n1c674gq"><img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" alt="whatsapp" width="50px"></a></div>
+            <div class="whatsapp" id="whatsapp">
+                <div id="whatsapp">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <style>
+            .whatsapp-icon-container {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 1000;
+        }
+            .whatsapp-container {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            background-color: white;
+            background-image: url('https://th.bing.com/th/id/OIP.zs6ycwcSD15SnbzbvFAgRwHaLH?rs=1&pid=ImgDetMain');
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        
+        #whatsappbox {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        .whatsapp-icon {
+    
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        }
+        </style>
+        <div class="chat-icon-container">
+            <div class="chat-icon">💬</div>
+            <div class="chat-container" id="chat-container">
+                <div id="chatbox">
+                    <p><strong>Nikhil :</strong> Hi! My Name is Nikhil. How can I help you today?</p>
+                </div>
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+
+        <script>
+            document.querySelector('.chat-icon').addEventListener('click', function() {
+    const chatContainer = document.getElementById('chat-container');
+    if (chatContainer.style.display === 'none' || chatContainer.style.display === '') {
+        chatContainer.style.display = 'block';
+    } else {
+        chatContainer.style.display = 'none';
+    }
+});
+
+document.getElementById('sendBtn').addEventListener('click', function() {
+    let userInput = document.getElementById('userInput').value.trim();
+    let chatbox = document.getElementById('chatbox');
+    
+    if (userInput !== "") {
+        chatbox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+        document.getElementById('userInput').value = '';
+
+        // Simulate AI response
+        setTimeout(() => {
+            let aiResponse = getAIResponse(userInput);
+            chatbox.innerHTML += `<p><strong>Nikhil:</strong> ${aiResponse}</p>`;
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }, 1000);
+    }
+});
+
+function getAIResponse(input) {
+    // Simple AI response logic (you can replace this with an actual AI API)
+    const responses = {
+        "hello": "Hello! How can I assist you today?",
+        "how are you": "I'm just a guide to help!",
+        "what is your name": "I am your friendly Nikhil",
+        "nikhil": "Bol n",
+        "jevan zal": "Ho tuz",
+        "j1 zal": "Nahi karnar aata",
+        "nahi": "kadhi jevnar aahes",
+        "what i can do after 10th": "You may go to the consultants and then select 10th class for the information.",
+        "what i can do after tenth": "You may go to the consultants and then select 10th class for the information.",
+        "what i can do after ten": "You may go to the consultants and then select 10th class for the information.",
+        "what i can do after 12th": "You may go to the consultants and then select 12th class for the information.",
+        "what i can do after twelveeth": "You may go to the consultants and then select 12th class for the information.",
+        "what i can do after twelvee": "You may go to the consultants and then select 12th class for the information.",
+        "what i do after 10th": "You may go to the consultants and then select 10th class for the information.",
+        "mi ya website la pahu kashi":"Please Home var click kara"
+    };
+
+    let lowerInput = input.toLowerCase();
+    return responses[lowerInput] || "Sorry, I don't understand that.";
+}
+
+        </script>
+
+        <style>.chat-icon-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .chat-icon {
+            background-color: #FF3B3B;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chat-container {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            background-color: white;
+            background-image: url('https://th.bing.com/th/id/OIP.zs6ycwcSD15SnbzbvFAgRwHaLH?rs=1&pid=ImgDetMain');
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        
+        #chatbox {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        
+        #userInput {
+            width: calc(100% - 60px);
+            padding: 5px;
+            margin-right: 10px;
+            
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        #sendBtn {
+            padding: 5px 10px;
+            background-color: #FF3B3B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #sendBtn:hover {
+            background-color: #cc3232;
+        }
+        </style> 
+</body>
+</html>
